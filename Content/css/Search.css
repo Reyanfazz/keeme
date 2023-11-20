@@ -1,0 +1,111 @@
+﻿/* Add this to your existing CSS or create a new style block */
+/* Base styles for search bar */
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 150px; /* Adjust the margin as needed */
+    margin-left: 45px
+}
+
+.kme-search-bar {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #1e1e2c;
+    color: white;
+    outline: none;
+    height: 45px;
+    margin-right: 145px;
+}
+
+    .kme-search-bar::placeholder {
+        color: #8c8c8c;
+    }
+
+    /* Add transition for a smooth effect */
+    .kme-search-bar:focus {
+        background-color: #27293d;
+        transition: background-color 0.3s ease;
+    }
+
+/* Search icon */
+.search-icon {
+    position: absolute;
+    right: 156px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .kme-search-bar {
+        width: 100%;
+        margin-right: 0; /* Remove margin for smaller screens */
+    }
+
+    .search-icon {
+        right: 10px; /* Adjust the position for smaller screens */
+    }
+}
+
+
+.box1 {
+    background-color: #f2f2f2;
+    color: #2c2c2c;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    background: #e0e0e0;
+    display: flex;
+    justify-items: first baseline;
+}
+/* Base styles for the container */
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .box-container {
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 300px;
+    }
+}
+
+/* box-con*/
+.box-container {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box-title {
+    margin-top: 5rem;
+    text-align: center;
+    color: antiquewhite;
+}

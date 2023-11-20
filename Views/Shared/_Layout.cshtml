@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css/Site.css")
+    @Styles.Render("~/Content/css/Login.css")
+    @Styles.Render("~/Content/css/SignUp.css")
+    @Styles.Render("~/Content/css/Search.css")
+    @Styles.Render("~/lib/bootstrap/dist/css/bootstrap.min.css")
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    @Scripts.Render("~/Scripts/modernizr")
+</head>
+<body>
+    <!--header-->
+    <header class="sticky-top">
+        <div class="hcon container-fluid">
+            <!-- Added container-fluid for full-width content -->
+            <div class="header-content">
+
+                <!-- Toggler button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                </button>
+
+                <div class="image-container">
+                    <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="back" class="side-by-side">
+                    <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="front" class="side-by-side">
+                </div>
+
+                <div class="btn text-left">
+                    <button type="button">@Html.ActionLink("SignUp", "SignUp")</button>
+                    <button type="button">@Html.ActionLink("Login", "Login")</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidenav">
+            <a href="#"><i class="fa fa-book"></i> KME</a>
+            <i class="fa fa-home">@Html.ActionLink("Home", "Index")</i>
+            <i class="fa fa-search">@Html.ActionLink("Search", "Search")</i>
+            <i class="fa fa-dropbox">@Html.ActionLink("Topic", "Topic")</i>
+            <i class="fa fa-dropbox">@Html.ActionLink("Admin", "AdminPage")</i>
+        </aside>
+        <aside class="sidena">
+            <a href="#"><i class="fa fa-address-book"></i> your library</a>
+
+        </aside>
+    </div>
+    <div class="fcontainer">
+
+
+        <div class="text-center text-md-left">
+
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+
+
+        </div>
+
+    </div>
+
+
+    <!--footer-->
+    <footer class="foot">
+        <div class="kme-footer-section pt-5 pb-5">
+            <div class="fcontainer">
+                <div class="row">
+                    <!-- First column: Company information and social media links -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="text-center text-md-left">
+                            <img src="~/" class="kme-logo" alt="KME Logo" />
+                            <div class="d-flex flex-row justify-content-center justify-content-md-start mt-3 mb-3">
+                                <!-- Social media icons -->
+                                <div class="kme-footer-section-icon-container">
+                                    <i class="fab fa-google icon"></i>
+                                </div>
+                                <div class="kme-footer-section-icon-container">
+                                    <i class="fab fa-twitter icon"></i>
+                                </div>
+                                <div class="kme-footer-section-icon-container">
+                                    <i class="fab fa-instagram icon"></i>
+                                </div>
+                                <div class="kme-footer-section-icon-container">
+                                    <i class="fab fa-linkedin icon"></i>
+                                </div>
+                            </div>
+                            <p class="kme-footer-section-address">
+                                37, Ayur Vigyan Nagar, New Delhi, India.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Second column: "Get to know us" section -->
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h2 class="kme-footer-section-heading mb-3">Get to know us</h2>
+                        <ul class="kme-footer-section-list">
+                            <li class="kme-footer-section-list-item">About us</li>
+                            <li class="kme-footer-section-list-item">Career</li>
+                            <li class="kme-footer-section-list-item">Press Releases</li>
+                            <li class="kme-footer-section-list-item">Gift a smile</li>
+                        </ul>
+                    </div>
+
+                    <!-- Third column: "Contact with Us" section -->
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h2 class="kme-footer-section-heading mb-3">Contact with Us</h2>
+                        <ul class="kme-footer-section-list">
+                            <li class="kme-footer-section-list-item">Facebook</li>
+                            <li class="kme-footer-section-list-item">Twitter</li>
+                            <li class="kme-footer-section-list-item">Instagram</li>
+                        </ul>
+                    </div>
+
+                    <!-- Fourth column: "Let Us Help You" section -->
+                    <div class="col-6 col-lg-3 mt-3">
+                        <h2 class="kme-footer-section-heading mb-3">Let Us Help You</h2>
+                        <ul class="kme-footer-section-list">
+                            <li class="kme-footer-section-list-item">100% Purchase Protection</li>
+                            <li class="kme-footer-section-list-item">Your Account</li>
+                            <li class="kme-footer-section-list-item">Return Centre</li>
+                            <li class="kme-footer-section-list-item">Help</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="hr-line" />
+
+                <!-- Copyright information -->
+                <div class="text-center">
+                    <i class="fa fa-copyright icon" aria-hidden="true"></i>
+                    <span class="kme-footer-section-copyright">
+                        2023 by team Tri.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
