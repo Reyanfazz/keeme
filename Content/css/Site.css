@@ -2,10 +2,11 @@
     background-color: #2c2c2c;
     text-align: end;
     position: fixed;
-    top: 0;
+    top: 3px;
     width: 86.9%;
     border-radius: 7px;
     margin-left: 10.5rem;
+    left: -9px;
 }
 
 * {
@@ -21,28 +22,26 @@ body {
     line-height: 1.5;
     color: #858586;
     text-align: left;
-    background-color: #000000;
+    background-color: #0e0e0e !important;
 }
 
 header {
+    position: absolute;
     background-color: rgb(52, 52, 52);
     padding-bottom: 10px;
-    margin-left: 13%;
 }
 
-.hcon {
-    margin: 0;
-    /* Remove any margin to ensure full-width */
-}
 
 /* Style for the Spotify title */
 .image-container {
-    margin-top: 15px;
+    margin-left: 15rem;
+    padding-top: 2%;
     display: flex;
 }
 
 
 .side-by-side {
+
     cursor: pointer;
     height: 20px;
 }
@@ -61,7 +60,7 @@ button {
     cursor: pointer;
     background-color: rgb(39, 39, 239);
     color: white;
-    margin: 0 3px;
+
 }
 
 a {
@@ -77,7 +76,7 @@ button:hover {
 
 .btn {
     flex: 1 0 40px;
-    margin-right: 10rem;
+
 }
 
 .titlebackground {
@@ -89,11 +88,10 @@ button:hover {
 
 /* Sidenav Styles */
 .sidena {
-    width: 160px;
     height: 80%;
     position: fixed;
     z-index: 1;
-    top: 13.5rem;
+    top: 18rem;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -101,6 +99,7 @@ button:hover {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 7px;
+    width: 200px;
 }
 
     .sidena a {
@@ -121,10 +120,9 @@ button:hover {
         }
 
 .sidenav {
-    width: 160px;
+    max-height: 18%;
     position: fixed;
-    z-index: 1;
-    top: 3px;
+    top: 13%;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -132,6 +130,8 @@ button:hover {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 7px;
+    width: 200px;
+
 }
 
     .sidenav a {
@@ -158,12 +158,12 @@ button:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
-    margin: 5% 0 5% 0;
+    margin: 2% 0 5% 0;
     background-color: #242525;
     border-radius: 7px;
-    max-width: 200rem;
-    min-width: 55%;
-    margin-left: 168px;
+    max-width: 223rem;
+    min-width: 30%;
+    margin-left: 218px;
     padding: 0 1em;
     display: flex;
     flex-wrap: wrap;
@@ -180,6 +180,8 @@ button:hover {
     flex-wrap: wrap;
     position: relative;
     height: fit-content;
+    top: 2px;
+    left: 0px;
 }
 
 /* Adjust padding and margins as needed */
@@ -188,7 +190,7 @@ button:hover {
     font-family: 'Arial', sans-serif;
     margin: 10px;
     width: calc(20% - 40px);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 ;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
     display: inline-block;
@@ -211,6 +213,7 @@ button:hover {
     }
 
     .sidenav {
+
         display: block;
     }
 
@@ -251,7 +254,7 @@ button:hover {
 .foot {
     padding: 20px;
     text-align: center;
-    margin-left: 160px;
+    margin-left: 202px;
     color: #fff;
 }
 

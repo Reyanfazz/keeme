@@ -21,23 +21,25 @@
     <!--header-->
     <header class="sticky-top container-fluid">
 
-                <div class="image-container">
-                    <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="back" class="side-by-side">
-                    <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="front" class="side-by-side">
-                </div>
-
-                <div class="btn text-left">
-                    <!-- Changed to text-left -->
-                    <button type="button" onclick="location.href='@Url.Action("SignUp", "Home")'">Sign Up</button>
-                    <button type="button" onclick="location.href='@Url.Action("Login", "Home")'">Login</button>
-                </div>
+        <div class="image-container">
+            <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="back" class="side-by-side">
+            <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="front" class="side-by-side">
+        </div>
+        <i class="fas fa-search search-icon">
+            <input type="text" placeholder="Search" class="kme-search-bar">
+        </i>
+        <div class="btn text-left">
+            <!-- Changed to text-left -->
+            <button type="button" onclick="location.href='@Url.Action("SignUp", "Home")'">Sign Up</button>
+            <button type="button" onclick="location.href='@Url.Action("Login", "Home")'">Login</button>
+        </div>
     </header>
 
     <div class="container">
         <aside class="sidenav">
             <a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Home</a>
             <a href="@Url.Action("Index", "Search")"><i class="fa fa-search"></i> Search</a>
-            <button class="topicdown-btn" ><i class="fa fa-caret-down"></i>Topic </button>
+            <button class="topicdown-btn"><i class="fa fa-caret-down"></i>Topic </button>
             <div class="topic-container">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
@@ -139,7 +141,10 @@
         </div>
     </footer>
 
-    @Scripts.Render("~/Scripts/js/Topic.js") 
+
+
+
+    @Scripts.Render("~/Scripts/js/Topic.js")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace eme.Controllers
 {
-    public class HomeController : Controller
+    public class SearchController : Controller
     {
         public ActionResult Index()
         {
@@ -24,11 +24,6 @@ namespace eme.Controllers
         }
 
         public ActionResult Login()
-        {
-            return View();
-        }
-
-        public ActionResult Topic()
         {
             return View();
         }
